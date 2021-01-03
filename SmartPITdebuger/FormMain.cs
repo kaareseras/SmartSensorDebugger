@@ -124,7 +124,7 @@ namespace SmartPITdebuger
         {
             //RxString = _serialPort.ReadExisting();
             int i = _serialPort.ReadByte();
-            RxString = i.ToString() + "  -   " + Convert.ToString(i, 2).PadLeft(8, '0') + "b" + (char)10;
+            RxString = i.ToString() + "  -   " + Convert.ToString(i, 2).PadLeft(8, '0') + "b" + "\r\n";
 
             this.Invoke(new EventHandler(DisplayText));
 
