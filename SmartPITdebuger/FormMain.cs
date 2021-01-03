@@ -17,7 +17,7 @@ using System.Threading;
 
 namespace SmartPITdebuger
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
 
         SerialPort _serialPort = new SerialPort();
@@ -27,7 +27,7 @@ namespace SmartPITdebuger
         String[] arrRMS = { "RCS64", "SSDC", "PCLapCpunter" };
         String[] arrBoards = {"Nano", "UNO (SmartSensor)", "Mega" };
 
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
 
